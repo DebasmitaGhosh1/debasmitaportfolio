@@ -39,7 +39,7 @@ fun ExperienceSection(ctx: PageContext, breakpoint: Breakpoint) {
         SectionTitle(EXPERIENCE_TITLE.kebabCaseToTitleCamelCase())
 
         Surface(modifier = SurfaceStyle.toModifier()) {}
-//..
+
         SimpleGrid(
             numColumns = numColumns(base = 1, md = 1),
             modifier = Modifier.fillMaxWidth()
