@@ -1,6 +1,7 @@
 package com.debasmitaghosh.portfolio
 
 import androidx.compose.runtime.*
+import com.varabyte.kobweb.compose.css.ScrollBehavior
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.core.App
 import com.varabyte.kobweb.silk.SilkApp
@@ -13,7 +14,10 @@ import org.jetbrains.compose.web.css.*
 @Composable
 fun AppEntry(content: @Composable () -> Unit) {
     SilkApp {
-        Surface(SmoothColorStyle.toModifier().minHeight(100.vh)) {
+        Surface(
+            SmoothColorStyle.toModifier().minHeight(100.vh)
+                .scrollBehavior(ScrollBehavior.Smooth)
+        ) {
             content()
         }
     }
