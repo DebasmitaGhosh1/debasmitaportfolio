@@ -1,6 +1,6 @@
 [build]
-command = "./gradlew kobwebExport"  # Command to build your site using Gradle and Kobweb
-publish = "site/build/dist/jsProductionExecutable"  # Path where the built output will be
+command = "chmod +x ./gradlew && ./gradlew kobwebExport --stacktrace --info"
+publish = "site/build/dist/jsProductionExecutable"
 
 [build.environment]
-JAVA_VERSION = "11"  # Ensures that Java 11 is used during the build process
+JAVA_VERSION = "17"  # Updated to Java 17 which is more commonly required for modern Kotlin projects
