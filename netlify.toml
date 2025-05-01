@@ -1,0 +1,3 @@
+[build]
+command = "./gradlew kobwebExport"
+publish = "site/build/dist/jsProductionExecutable"
