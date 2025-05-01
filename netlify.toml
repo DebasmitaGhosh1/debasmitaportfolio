@@ -1,10 +1,6 @@
 [build]
-command = "./gradlew kobwebExport"  # Command to run during the build
-publish = "site/build/dist/jsProductionExecutable"  # Directory to publish after build
+command = "./gradlew kobwebExport"  # Command to build your site using Gradle and Kobweb
+publish = "site/build/dist/jsProductionExecutable"  # Path where the built output will be
 
 [build.environment]
-# Set JAVA_VERSION to ensure Java 11 is used during the build
-JAVA_VERSION = "11"
-
-[[plugins]]
-package = "@netlify/plugin-functions-install-core"
+JAVA_VERSION = "11"  # Ensures that Java 11 is used during the build process
