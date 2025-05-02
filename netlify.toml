@@ -1,6 +1,9 @@
 [build]
-command = "chmod +x ./gradlew && ./gradlew :site:kobwebExport --stacktrace --info"
-publish = "site/build/dist/jsProductionExecutable"
+command = "./gradlew :site:kobwebExport --stacktrace --info"
+publish = "build"
+
+[context.production.environment]
+GRADLE_HOME = "/opt/gradle"  # If necessary for the build
 
 [build.environment]
 JAVA_VERSION = "17"
