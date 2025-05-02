@@ -1,6 +1,6 @@
 [build]
-command = "chmod +x ./gradlew && ./gradlew kobwebExport --stacktrace --info"
+command = "chmod +x ./gradlew && ./gradlew :site:kobwebExport --stacktrace --info"
 publish = "site/build/dist/jsProductionExecutable"
 
 [build.environment]
-JAVA_VERSION = "17"  # Updated to Java 17 which is more commonly required for modern Kotlin projects
+JAVA_VERSION = "17"

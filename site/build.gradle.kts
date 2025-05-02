@@ -15,9 +15,7 @@ kobweb {
         index {
             description.set("Powered by Kobweb")
             head.add {
-                link(
-                    rel = "stylesheet", href = "/fonts/faces.css"
-                )
+                link(rel = "stylesheet", href = "/fonts/faces.css")
             }
         }
     }
@@ -33,8 +31,6 @@ kotlin {
             implementation(libs.kobweb.core)
             implementation(libs.kobweb.silk)
             implementation(libs.silk.icons.fa)
-
         }
     }
-
 }
