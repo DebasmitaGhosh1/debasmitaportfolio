@@ -1,6 +1,6 @@
 [build]
 command = "./gradlew :site:kobwebExport --stacktrace --info"
-publish = "build"
+publish = "site/build/dist"
 
 [context.production.environment]
 GRADLE_HOME = "/opt/gradle"  # If necessary for the build
